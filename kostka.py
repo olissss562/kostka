@@ -1,9 +1,9 @@
 from turtle import Turtle
 import random
 
-
 turtle1 = Turtle()
 turtle1.speed(999)
+
 
 def ctverec():
     for n in range(4):
@@ -13,7 +13,7 @@ def ctverec():
 
 def vykresli_cislo(cislo):
     ctverec()
-    vzdalenost = 100/(cislo+1)
+    vzdalenost = 100 / (cislo + 1)
     for i in range(cislo):
         turtle1.penup()
         turtle1.forward(vzdalenost)
@@ -32,14 +32,10 @@ def vykresli_cislo(cislo):
     turtle1.left(180)
 
 
-
-
-
 vykresli_cislo(random.randint(1, 6))
 turtle1.penup()
 turtle1.forward(150)
 turtle1.pendown()
 vykresli_cislo(random.randint(1, 6))
-
 
 input()
